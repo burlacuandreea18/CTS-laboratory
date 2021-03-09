@@ -15,3 +15,5 @@ Code review
 -is t limited to {1, 2, 3, 4}?
 -there are no validations for t, s and perioada
 
+3.Single Responsability & KISS
+-outsource the intermediary operations 
