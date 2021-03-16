@@ -1,7 +1,7 @@
-package ro.se.cts.g1092.refactoring.phase2;
+package ro.ase.cts.g1092.refactor.phase4;
 
 public enum ProductType {
-	NEW(0), DISCOUNT(0.1f), LIMITED_STOCK(0.25f), LEGACY(0.35f);
+	NEW(0), DISCOUNTED(0.1f), LIMITED_STOCK(0.25f), LEGACY(0.35f);
 	
 	private float discount;
 	

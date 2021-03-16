@@ -1,6 +1,6 @@
-package ro.se.cts.g1092.refactoring.phase2;
+package ro.ase.cts.g1092.refactoring.phase2;
 
-import ro.se.cts.g1092.refactoring.exceptions.InvalidValueException;
+import ro.ase.cts.g1092.refactoring.exceptions.InvalidValueException;
 
 public class SalesStrategy{
 	

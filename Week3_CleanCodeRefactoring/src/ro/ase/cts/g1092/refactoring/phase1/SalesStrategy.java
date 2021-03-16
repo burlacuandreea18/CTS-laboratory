@@ -1,4 +1,4 @@
-package ro.se.cts.g1092.refactoring.phase1;
+package ro.ase.cts.g1092.refactoring.phase1;
 
 public class SalesStrategy{
 	public float ComputeFinalPrice(
