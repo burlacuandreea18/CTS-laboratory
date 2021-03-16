@@ -1,4 +1,4 @@
-package ro.ase.cts.g1092.refactor.phase5;
+package ro.ase.cts.g1092.refactoring.phase5;
 
 import ro.ase.cts.g1092.refactoring.exceptions.InvalidPriceException;
 import ro.ase.cts.g1092.refactoring.exceptions.InvalidValueException;
