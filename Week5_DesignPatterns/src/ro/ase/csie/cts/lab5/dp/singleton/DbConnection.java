@@ -1,5 +1,7 @@
 package ro.ase.csie.cts.lab5.dp.singleton;
 
+import java.net.Socket;
+
 public class DbConnection {
 	String socket;
 	String schema;
@@ -37,11 +39,26 @@ public class DbConnection {
 	}
 	
 	//the method used to return the reference to the unique obj
+	//is using default/ app setting values
 	public static DbConnection getDbConnection() {
 		if(DbConnection.dbConnection==null) {
 			//you can get detail from files etc
 			dbConnection = new DbConnection();
 		}
+		
+			return DbConnection.dbConnection;
+	}
+	
+	public static DbConnection getDbConnection(
+			String socket, String schema) {
+		if(DbConnection.dbConnection == null) {
+			dbConnection = new DbConnection(socket,schema);
+		}
+		//optional - throw an error if they try to open a connection to a db
+				if(!socket.equals(dbConnection.socket) || 
+						!schema.equals(dbConnection.schema))
+					throw new UnsupportedOperationException();
+			
 		return DbConnection.dbConnection;
 	}
 }

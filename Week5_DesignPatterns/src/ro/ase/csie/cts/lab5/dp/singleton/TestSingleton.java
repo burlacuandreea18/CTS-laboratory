@@ -13,8 +13,19 @@ public class TestSingleton {
 		DbConnection con3=DbConnection.getDbConnection();
 		
 		//showing it the same obj
-		if(con1==con2)
+		if(con1==con2) {
 			System.out.println("They are referencing the same object");
+	}
+	
+	DbConnection con4 = DbConnection.getDbConnection("10.0.0.1:3306", "ctsDB");
+	
+	if(con1==con4) {
+		System.out.println("They are referencing the same object");
+	}
+	
+	//you still get the same collection
+	DbConnection con5 = DbConnection.getDbConnection("10.0.0.1:3306", "ctsDB_proud");
+	
 	}
 
 }
