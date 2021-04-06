@@ -1,7 +1,5 @@
 package ro.ase.csie.cts.g1092.dp.simplefactory;
 
-import java.nio.channels.UnsupportedAddressTypeException;
-
 public class WeaponsFactory {
 	
 	public static AbstractWeapon getWeapon(WeaponType type, String desc) {
@@ -15,7 +13,7 @@ public class WeaponsFactory {
 		case BAZOOKA:
 			weapon = new Bazooka(desc);
 		default:
-			throw new UnsupportedAddressTypeException();
+			throw new UnsupportedOperationException();
 		}
 		
 		return weapon;

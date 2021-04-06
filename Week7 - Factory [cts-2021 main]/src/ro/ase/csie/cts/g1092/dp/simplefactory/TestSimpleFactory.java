@@ -5,8 +5,8 @@ public class TestSimpleFactory {
 	public static void main(String[] args) {
 		
 		Superhero superman= new Superhero("Superman");
-		superman.setWeapon(new Bazooka("Boom"));
-		superman.setWeapon(new MachineGun("MG", 50, 100));
+		//superman.setWeapon(new Bazooka("Boom"));
+		//superman.setWeapon(new MachineGun("MG", 50, 100));
 		
 		AbstractWeapon bazooka=
 				WeaponsFactory.getWeapon(WeaponType.BAZOOKA, "BOOM");
