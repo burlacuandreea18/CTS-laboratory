@@ -1,0 +1,16 @@
+Code review
+
+1.Code structure and naming conventions 
+-improve readability
+-no need to scroll
+-renaming functions
+
+2.Implemenation:
+-less hard coded values
+-deleting useless functions
+
+3.Reduce the complexity of the current functions
+
+4.Single Responsability & Dependency Inversion (DIP)
+-refactor the custom exceptions framework to be more specific
+-validate the time period for the account and the loan value
