@@ -7,6 +7,13 @@ public class Group extends AbstractNode{
 	String groupName;
 	ArrayList<AbstractNode> nodes = new ArrayList<>();
 	
+	
+	
+	public Group(String groupName) {
+		super();
+		this.groupName = groupName;
+	}
+
 	@Override
 	public void attack(String playerName) {
 		for(AbstractNode node:nodes) {
