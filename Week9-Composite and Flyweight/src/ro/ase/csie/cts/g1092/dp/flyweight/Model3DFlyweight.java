@@ -1,4 +1,4 @@
-package ro.ase.csie.cts.g1092.dp.flyweoght;
+package ro.ase.csie.cts.g1092.dp.flyweight;
 
 import java.util.ArrayList;
 
