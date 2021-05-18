@@ -35,7 +35,8 @@ public class FantasySuperHero extends SuperHeroCharacter {
 
 	@Override
 	public void takeAHit(int points) {
-		System.out.println(String.format("%s took a hit of %d points", name, points));
+		System.out.println(String.format("%s took a hit of %d points"
+				, name, points));
 		this.power -=points;
 	}
 

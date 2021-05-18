@@ -1,7 +1,5 @@
 package ro.ase.csie.cts.lab5.dp.singleton;
 
-import java.net.Socket;
-
 public class DbConnection {
 	String socket;
 	String schema;

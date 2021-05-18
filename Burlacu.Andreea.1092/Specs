@@ -1,0 +1,41 @@
+1) Title of the bachelor topic:
+Mobile Braicar, an application for public transport information application 
+for the city of Braila 
+
+2) Design Patterns: 
+	A) Singleton:
+	-efficient management of application's SharedPreferences
+	Advantages:
+	-singly managing the settings and preferences for the app
+	-easy to implement
+	Disadvantages:
+	-can become a bottleneck that can affect he app performance
+	
+	B) Factory
+	-implementing a mechanism that allows the user to customize a route 
+	according to their necessities at the time
+	Advantages:
+	-common interface that allows for future types of objects 
+	-easy to implement
+	Disadvantages:
+	-new objects can't be generated
+	-private constructors 
+	
+	C) BUILDER
+	-building complex types of objects (such as a bus)
+	Advantages:
+	-allows variety when it comes to internal representation
+	-buses are instantiated in a complete state
+	Disadvantages:
+	-the number of lines of code in the Bus class increase
+	
+	D) PROTOTYPE
+	-allows the creation of a bus model 
+	Advantages:
+	-easily cloning objects
+	
+	E) DECORATOR 
+	-extending profile for passangers 
+	Advantages:
+	-making the interface more customizable
+	-allows decoration for objects
